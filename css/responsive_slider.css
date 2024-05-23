@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (max-width:768px){
+	
+	.modal{
+	margin-top: -25px;
+	width: 100%;
+	height: 100%;
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+	display: flex;
+	-webkit- display: flex;
+	-moz- display: flex;
+	-o- display: flex;
+	-ms- display: flex;
+	
+	animation: modal 0s 0s forwards;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#cerrar{
+	display: none;
+}
+
+#cerrar + label{
+	position: fixed;
+	color: white;
+	font-size: 15px;
+	z-index: 50;
+	right: 10px;
+	margin: 10px;
+	padding: 10px;
+	cursor: pointer;
+	
+	z-index: 200;
+	animation: modal 0s 0s forwards;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#cerrar:checked + label, #cerrar:checked ~.modal{
+	display: none;
+}
+
+#cont-slider{
+	margin: auto;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	-webkit- display: flex;
+	-moz- display: flex;
+	-o- display: flex;
+	-ms- display: flex;
+	
+}
+
+#slider{
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+#slider ul{
+	background-position: center;
+	display: flex;
+	-webkit- display: flex;
+	-moz- display: flex;
+	-o- display: flex;
+	-ms- display: flex;
+	
+	padding: 0;
+	width: 600%;
+	
+	animation: cambio 30s infinite;
+	animation-direction: normal;
+}
+
+#slider li{
+	width: 100%;
+	list-style: none;
+}
+
+@keyframes cambio{
+	0%{margin-left: 0;}
+	10%{margin-left: 0;}
+	
+	11%{margin-left: -100;}
+	21%{margin-left: -100%;}
+	
+	31%{margin-left: -200;}
+	41%{margin-left: -200%;}
+	
+	51%{margin-left: -300;}
+	61%{margin-left: -300%;}
+	
+	71%{margin-left: -400;}
+	81%{margin-left: -400%;}
+	
+	91%{margin-left: -500;}
+	100%{margin-left: -500%;}
+}
+
+@keyframes modal{
+	100%{
+		visibility: visible;
+		opacity: 1;
+	}
+}
+	
+}

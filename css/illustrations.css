@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+#menus{
+	width: 100%;
+	height: 30px;
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
+}
+
+#menus li{
+	margin: 15px;
+	padding: 0px;
+}
+
+#menus li ul{
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+
+#menus li:hover > ul{
+	display: flex;
+	width: 100%;
+	padding: -20px;
+}
+
+#menus li ul li{
+	position: relative;
+	display: inline-flex;
+}
+
+#menus li ul li lu{
+	right: 10px;
+	top: 0px;
+}
+
+#barras{
+	margin-left: 70px;
+	padding: 0px;
+	width: 20%;
+	text-align: justify;
+}
+
+#logo{
+	margin: -30px;
+	padding: 0px;
+	width: 40%;
+}
+
+#redes{
+	margin-right: -40px;
+	margin-top: -19px;
+	padding: -20px;
+	width: 20%;
+}
+
+#LINKEDIN{
+	width: -19px;
+	height: 19px;
+	margin: -15px;
+	padding: 0px;
+	position: fixed;
+	right: 94px;
+	cursor: pointer;
+}
+
+#BEHANCE{
+	width: -19px;
+	height: 19px;
+	margin: -22px;
+	padding: 7px;
+	position: fixed;
+	right: 63px;
+	cursor: pointer;
+	z-index: auto;
+}
+
+#FACEBOOK{
+	width: -19px;
+	height: 19px;
+	margin: -30px;
+	padding: 14px;
+	position: fixed;
+	right: 37px;
+	cursor: pointer;
+}
+#barras2{
+	margin-left: 210px;
+	padding: 20px;
+	width: 20%;
+	display: flex;
+}
+
+#gallery-portfolio{
+	margin: 50px;
+	padding: 0px;
+	left: 220px;
+}
+
+#gallery-portfolio a{
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+}
+
+#abajo{
+	margin: 10px;
+	padding: 45px;
+	position: fixed;
+	bottom: -85px;
+	right: 465px;
+	cursor: pointer;
+}
+
+.bton-cerrar{
+	z-index: 100;
+}
+
+.modal{
+	z-index: 100;
+}
+
+ul{
+	margin: 30px;
+	padding: 0px;
+	top: 0px;
+	width: 250px;
+	font-family: Galette;
+}
+
+li {
+	display: inline;
+}
+
+a{
+	color: #78bbf3;
+	font-size: 12px;
+	text-decoration: none;
+	text-decoration-color: white;
+}
