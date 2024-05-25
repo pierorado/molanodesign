@@ -20,7 +20,7 @@
 #cerrar{
 	display: none;
 }
-
+/*
 #cerrar + label{
 	position: fixed;
 	color: #78bbf3;
@@ -37,7 +37,22 @@
 	visibility: hidden;
 	opacity: 0;
 }
-
+*/
+#cerrar + label{
+		position: fixed;
+		color: #78bbf3;
+		font-size: 15px;
+		bottom: 3px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		padding: 10px;
+		cursor: pointer;
+		z-index: 200;
+		animation: modal 0s 0s forwards;
+		visibility: hidden;
+		opacity: 0;
+}
 #cerrar:checked + label, #cerrar:checked ~.modal{
 	display: none;
 }

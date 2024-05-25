@@ -4,7 +4,7 @@
 @media (max-width:768px){
 
 #contenedor{
-	background-image: url(../imaganes/about_layout.jpg);
+	/*background-image: url(../imaganes/about_layout.jpg);*/
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
