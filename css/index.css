@@ -26,10 +26,6 @@ html{
 body {
 	font-family: var(--tipo-principal);
  }
- header {
-	height: 84px;
-	
-}
 #contenedor__contacto{
 	background-image: url(../imaganes/about-contact.jpg);
 	background-repeat: no-repeat;
@@ -137,7 +133,8 @@ h1{
     width: 100%;
     display: flex;
     gap: 50px;
-    margin: 35px auto;
+    margin: 0px auto;
+	padding-top: 100px;
 	
 }
 .datacontact__message{
@@ -253,11 +250,21 @@ h1{
 	  }
   }
   /* lg */
+/* lg */
+@media (max-width: 1024px) {
+	.datacontact {
+		width: 50%;
+	}
+	.datacontact__ul {
+		font-size: 12px;
+	}
+  }
 @media (max-width: 768px) {
 	header {
         height: 115px;
     }
 	.datacontact {
+		width: 100%;
         padding: 50px;
         flex-direction: column;
         text-align: center;
@@ -275,7 +282,9 @@ h1{
 	.datacontact__message {
 		font-size: 16px;
 	}
-	.datacontact__ul {
-		font-size: 16px;
-	}
+	
+  }
+  @media (max-width: 475px) {
+
+	
   }
